@@ -100,13 +100,14 @@ print(sum(digital), " summ numbers") # 15
 squaresNumber = [itemNumber ** 2 for itemNumber in range(1, 5)]
 print(squaresNumber) # [1, 4, 9, 16]
 
+#-------- срезы списков, метод slice()
 
-# --- задания:
+players = ["Charlies", "Mishone", "Karl", "Billy", "Li", "Klementina"]
+print(players) # "Charlies", "Mishone", "Karl", "Billy", "Li", "Klementina"
+copy_players = players[:]
+print(copy_players) # "Charlies", "Mishone", "Karl", "Billy", "Li", "Klementina"  создали копию списка
+# если указать так [0:3] скопирует от 1го эл до 3го, если так [1:] то от 2го то последнего, если так [:] то весь список
 
-numbers_Until_20 = list(range(1, 21))
-print(numbers_Until_20) 
-
-
-millionsNumbers = list(range(1000000))
-for value in millionsNumbers:
-    print(value)
+players.append("new player")
+copy_players.append("your friend join to Game")
+print(players, " player list", copy_players," copy list players")

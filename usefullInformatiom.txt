@@ -1,0 +1,21 @@
+/****** Скрипт для команды SelectTopNRows из среды SSMS  ******/
+SELECT TOP (1000) [Code]
+      ,[Name]
+      ,[NameShort]
+      ,[RailwayCode]
+      ,[NameTranslit]
+      ,[NameShortTranslit]
+      ,[IsActive]
+      ,[BaseCode]
+      ,[CityName]
+      ,[CountryCode]
+      ,[CountryName]
+      ,[Okato]
+      ,[Priority]
+      ,[NameEng]
+      ,[IataCode]
+      ,[InTeleTrain]
+      ,[InAmadeus]
+  FROM [AWAD_Rails_Serega].[ref].[Stations]
+   where len(Code)=3
+
