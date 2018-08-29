@@ -1,16 +1,17 @@
-import pdb
+
+import pdb; pdb.set_trace()
 
 
-class MyObj(object):
-    
-    def __init__(self, num_loops):
-        self.count = num_loops
+numbers = [20, 10, 30, 50]
+sumNum = sum(numbers)
+print(sumNum)
 
-    def go(self):
-        for i in range(self.count):
-            pdb.set_trace()
-            print i
-        return
+magicPeople = ["David", "John", "Mary", "Bob", "Bruce", "Bill", "Sten", "Mikle"]
 
-if __name__ == '__main__':
-    MyObj(5).go()
+for item in magicPeople:
+    if item == "Mary":
+        print(item.upper())
+    else:
+        print(item.lower())
+
+
